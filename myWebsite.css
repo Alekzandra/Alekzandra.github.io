@@ -1,0 +1,145 @@
+/* General CSS settings  */
+body {
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: 600;
+  line-height: 2;
+}
+
+.bright-section {
+  background-color: #F6F2E9;
+  font-family: Montserrat;
+  color: #1C658C;
+}
+
+.dark-section {
+  background-color: #CDDBCC;
+  font-family: Montserrat;
+  color: #1C658C;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+/* Title section */
+#title .container-fluid {
+  padding: 1% 15% 7%;
+}
+
+#title .nav-link{
+  color: #1C658C;
+}
+
+#title .nav-link:hover{
+  color: #1C658C;
+}
+
+.navbar-toggler {
+  margin: 5% 0;
+}
+
+.navbar{
+  padding: 0 0 4.5rem;
+  font-size: 0.9rem;
+  letter-spacing: -0.8px;
+}
+
+.myPicture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 3% 3%;
+}
+
+.short-story {
+  margin: 5% 5%;
+}
+
+/* Skills Section */
+.iconBig {
+  color: #1C658C;
+  padding: 5% 5%;
+}
+
+.tableSpacing{
+  padding-left: 2rem;
+}
+
+/* Work Experience Section */
+.btn {
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  border-radius: 25px;
+  font-family: Arial;
+  color: #1C658C;
+  font-size: 20px;
+  background: #F6F2E9;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.btn:hover {
+  background: #1C658C;
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+.card{
+  background-color: #CDDBCC;
+  border: 0;
+}
+
+#personalExperience{
+  padding-left: 6%;
+}
+
+.jobPlacesList{
+  padding-left: 0;
+}
+
+.experienceWorkPlaces{
+  font-weight: 700;
+}
+
+/* Footer */
+.footer{
+  line-height: 3;
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
+
+.fa-linkedin{
+  color: #1C658C;
+}
+
+@media (max-width: 1250px) {
+  .myPicture{
+    width: 220px;
+    height: 200px;
+  }
+  .container-fluid {
+    padding: 6% 8%;
+  }
+  i.iconBig {
+    font-size: 5rem;
+    padding: 10% 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar{
+    padding: 0 0 0.5rem;
+  }
+}
