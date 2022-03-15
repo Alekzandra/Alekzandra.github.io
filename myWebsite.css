@@ -67,11 +67,12 @@ h3 {
 /* Skills Section */
 .iconBig {
   color: #1C658C;
-  padding: 5% 5%;
+  margin:auto;
 }
 
-.tableSpacing{
-  padding-left: 2rem;
+.skillsTable td {
+  padding: 8px;
+  vertical-align: top;
 }
 
 /* Work Experience Section */
@@ -107,7 +108,7 @@ h3 {
   padding-left: 0;
 }
 
-.experienceWorkPlaces{
+.boldFont{
   font-weight: 700;
 }
 
