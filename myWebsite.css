@@ -24,7 +24,7 @@ h2{
     padding: 2rem 4rem;
   }
   .my-picture{
-    display: block;
+    display: none;
   }
 }
 @media (max-width: 1050px) {
@@ -62,14 +62,14 @@ nav {
 .nav-item{
   display: inline-block;
   margin-right: 22px;
-  font-size: 0.9rem;  
+  font-size: 0.9rem; 
 }
 .nav-item a {
   text-decoration: none;
   color: #041C32;
 }
 .nav-item a:hover{
-  color: white;
+  color: #CDDBCC;
 }
 
 @media (max-width: 700px) {
@@ -91,7 +91,7 @@ nav {
   .show-nav-items{
     display: block;
     position: absolute;
-    top: 4.5rem;
+    top: 3.3rem;
     left: 0;
     height: 10rem;
     transition: 0.5s ease-in-out all;
@@ -123,6 +123,11 @@ nav {
 .tech-skills i{
   font-size: 7rem;
 }
+@media (max-width: 1050px) {
+  .tech-skills i{
+    display: none;
+  }
+}
 
 /* Non Technical Skills */
 .non-tech-skills{
@@ -132,6 +137,15 @@ nav {
 }
 .non-tech-skills i{
   font-size: 7rem;
+}
+@media (max-width: 1050px) {
+  .non-tech-skills{
+    display: block;
+    align-items: left;
+  }
+  .non-tech-skills i{
+    display: none;
+  }
 }
 
 /* Professional Experience */
