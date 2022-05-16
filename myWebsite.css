@@ -27,7 +27,7 @@ h2{
     display: none;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 1035px) {
   .bright-section, .dark-section{
     padding: 3rem 6rem;
   }
@@ -43,58 +43,65 @@ h2{
 }
 
 /* Nav Bar */
-nav {
-  display: flex;
-  width: 100%;
-  height: 6rem;
-  justify-content: flex-end;
-  align-items: center;
-  line-height: 1.5;
+.navbar{
   background-color: #F6F2E9;
 }
-.nav-toggle-btn {
-  font-size: 1.5rem;
-  border-color: transparent;
+.nav-header{
+  height: 5rem;
+  display: flex;
+}
+.nav-toggle-btn{
   background-color: transparent;
+  border: none;
+  font-size: 1.7rem;
+  margin-left: 1.2rem;
   color: #041C32;
-  display: none;
+  transition: 0.3s ease-in-out all;
 }
-.nav-item{
-  display: inline-block;
-  margin-right: 22px;
-  font-size: 0.9rem; 
+.nav-toggle-btn:hover{
+  color: #2F8F9D;
 }
-.nav-item a {
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in-out all;
+}
+.show-links{
+  height: 210px;
+}
+.nav-link{
+  display: block;
+  padding: 1rem 1.3rem;
+  color: #041C32;
   text-decoration: none;
-  color: #041C32;
+  transition: 0.3s ease-in-out all;
+  font-size: 1rem;
 }
-.nav-item a:hover{
-  color: #CDDBCC;
+@media(max-width:1035px){
+  .nav-link:hover{
+    padding-left: 2.2rem;
+    color: #2F8F9D;
+  }
 }
 
-@media (max-width: 700px) {
+@media(min-width:1035px){
   .nav-toggle-btn{
-    display: flex;
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
+    display: none;
+  }
+  .nav-header{
+    height: auto;
   }
   .nav-links{
-    margin: 0;
-    height: 0;
-    overflow: hidden;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
   }
-  .nav-item{
-    display: block;
-    line-height: 3;
-  }
-  .show-nav-items{
-    display: block;
-    position: absolute;
-    top: 3.3rem;
-    left: 0;
-    height: 10rem;
-    transition: 0.5s ease-in-out all;
+  .nav-link:hover{
+    color: #2F8F9D;
   }
 }
 
@@ -137,6 +144,11 @@ nav {
 }
 .non-tech-skills i{
   font-size: 7rem;
+}
+.skill-name{
+  vertical-align: top;
+  text-align: left;
+  font-weight: 600;
 }
 @media (max-width: 1050px) {
   .non-tech-skills{
@@ -185,6 +197,9 @@ footer{
   font-size: 0.85rem;
 }
 footer i{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #041C32;
+}
+.icons-container a{
+  margin: 0 0.5rem;
 }

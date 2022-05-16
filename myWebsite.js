@@ -16,7 +16,7 @@ const toggleBtn = document.querySelector(".nav-toggle-btn");
 const navItems = document.querySelector(".nav-links");
 
 toggleBtn.addEventListener('click', function(){
-  navItems.classList.toggle('show-nav-items');
+  navItems.classList.toggle('show-links');
 });
 
 const seeMoreBtn = document.querySelector(".see-more-btn");

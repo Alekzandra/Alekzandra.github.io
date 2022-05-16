@@ -15,20 +15,18 @@
   <body>
 
 <!-- Navbar -->
-<nav>
-  <button type="button" class="nav-toggle-btn"><i class="fas fa-bars"></i></button>
-  <div class="nav-links">
-    <ul>
-      <li class="nav-item"><a href="#technicalSkills">Technical Skills</a></li>
-      <li class="nav-item"><a href="#nonTechnicalSkills">Non-technical Skills</a></li>
-      <li class="nav-item"><a href="#personalExperience">Personal Experience</a> </li>
-    </ul>
-  </div>
-</nav>
-
+  <nav class="navbar">
+      <div class="nav-header">
+        <button type="button" class="nav-toggle-btn"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="#technicalSkills" class="nav-link">Technical Skills</a>
+        <a href="#nonTechnicalSkills" class="nav-link">Non-technical Skills</a>
+        <a href="#personalExperience" class="nav-link">Personal Experience</a>
+      </div>
+  </nav>
 
 <main>
-
   <!-- About me Section -->
   <section class="bright-section">
     <div class="about-me">
@@ -37,7 +35,7 @@
       </div>
       <div>
         <h1>I'm Aleksandra Filipkowska</h1>
-        <p>My goal is to change the direction of my career and prove myself as a Front-End Developer.</p>
+        <p>My goal is to change the direction of my career and take part in the Web Development process.</p>
         <p>So far I gained experience at various Customer Service positions in transport/logistics sector. I learned a lot, but my curious nature needs greater challenges!</p>
       </div>
     </div>
@@ -48,30 +46,31 @@
     <div class="tech-skills">
       <div>
         <h2>My Technical Skills</h2>
+        <p>I don't have any commercial experience, therefore it's be fair to say that I'm a begginer in the programming world. Here's what I studied so far:</p>
         <table>
           <tr>
-            <td>HTML</td>
-            <td>Begginer / intermediate level - build a website, have knowledge about common HTML elements & attributes. </td>
+            <td class="skill-name">HTML</td>
+            <td>common HTML elements, attributes & website structure </td>
           </tr>
           <tr>
-            <td>CSS</td>
-            <td>Begginer / intermediate level - style a website using CSS, apply Bootstrap Library. </td>
+            <td class="skill-name">CSS</td>
+            <td>styling a website using CSS, making it responsive, applying Bootstrap Library </td>
           </tr>
           <tr>
-            <td>JavaScript</td>
-            <td>Beginner / intermediate level - have knowledge about variables, functions, loops; write simple functionalities. </td>
+            <td class="skill-name">JavaScript</td>
+            <td>variables, functions, loops, writing simple functionalities </td>
           </tr>
           <tr>
-            <td>Node.js</td>
-            <td>Beginner level - have knowledge about installation & possibilities; done few simple projects using Express.js</td>
+            <td class="skill-name">Node.js</td>
+            <td>installation & possibilities, done few simple projects using Express.js</td>
           </tr>
           <tr>
-            <td>Git</td>
-            <td>Beginner level - have knowledge about version control, Git repositories, GitHub possibilities & common CLI commands; </td>
+            <td class="skill-name">Git</td>
+            <td>version control concept, Git repositories, GitHub possibilities & common CLI commands </td>
           </tr>
           <tr>
-            <td>React.js</td>
-            <td>Just started</td>
+            <td class="skill-name">Databases</td>
+            <td>basic functionalities of MongoDB & Mongoose (CRUD operations)</td>
           </tr>
         </table>
       </div>
@@ -95,7 +94,6 @@
         <li>Problem solving</li>
         <li>Willingness to learn</li>
         <li>Adaptability</li>
-        <li>Team Player</li>
       </ul>
       </div>
     </div>
@@ -106,7 +104,7 @@
     <div class="prof-experience">
       <h2>Professional Experience</h2>
       <button class="btn see-more-btn" type="button">Click to see more</button>
-      <div>
+      <!-- <div> -->
         <ul class="experience-list" style="list-style-type:none;">
           <dl>
             01/07/2019 - present -  DSV ISS
@@ -116,7 +114,7 @@
           01/03/2015 – 30/06/2019 - Jupol-Car Sp. z o.o. / AvisBudgetGroup
           </dl>
             <li><u>Customer Service Specialist</u> (09/17 – 06/19) - handling customer complaints; cooperating with foreign ABG departments to solve customer inquiries; overseeing of receivables;</li>
-            <li><u>Senior Rental Agent</u>(08/16-09/17) - overseeing and planning station fleet; training of new employees; preparing and analyzing reports;</li>
+            <li><u>Senior Rental Agent</u> (08/16-09/17) - overseeing and planning station fleet; training of new employees; preparing and analyzing reports;</li>
             <li><u>Rental Agent</u> (03/15-08/16) – providing professional customer service at the rental desk; negotiating rental conditions (rates, additional products or services);</li>
           <br /><dl>
             15/07/2012-13/12/2014 - LS Airport Services
@@ -125,16 +123,21 @@
           <li><u>Team Leader</u> (02/2014-09/2014) - maintaining of accurate staffing plans; delegating and tracking of tasks; overseeing of appropriate flight service; handling stressful situations with passengers;</li>
           <li><u>Passenger Service Agent</u> (07/2012-01/2014) - serving passengers in the luggage check-in and gate areas; verifying all passengers documentation for travel; assisting passengers with disabilities.</li>
         </ul>
-      </div>
+      <!-- </div> -->
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
       <div>
-        <a href="https://www.linkedin.com/in/aleksandra-filipkowska-507167b3/">
-          <i class="fab fa-linkedin"></i>
-        </a>
+        <div class="icons-container">
+          <a href="https://www.linkedin.com/in/aleksandra-filipkowska-507167b3/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Alekzandra">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
         <p>© <script>document.write(new Date().getFullYear())</script> Aleksandra Filipkowska. All rights reserved. </p>
       </div>
   </footer>
